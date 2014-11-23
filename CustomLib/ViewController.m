@@ -59,7 +59,7 @@
 - (IBAction)doSelect:(id)sender {
     NSPredicate *predicate=[NSPredicate predicateWithFormat:@"t_name==%@",@"11"];
     NSDictionary *matchData=[CoreDataManager getDataForMatchString:predicate AndEntityName:ENTITY_NAME];
-//    NSLog(@"%@",matchData);
+    NSLog(@"%@",matchData);
 }
 
 //更新
