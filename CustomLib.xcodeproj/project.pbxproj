@@ -15,6 +15,11 @@
 		6ECB9AAD1A1E1FC200B5FE0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECB9AAC1A1E1FC200B5FE0F /* Images.xcassets */; };
 		6ECB9AB01A1E1FC200B5FE0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECB9AAE1A1E1FC200B5FE0F /* LaunchScreen.xib */; };
 		6ECB9ABC1A1E1FC200B5FE0F /* CustomLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9ABB1A1E1FC200B5FE0F /* CustomLibTests.m */; };
+		6ECB9AC71A1E20B800B5FE0F /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9AC61A1E20B800B5FE0F /* TableController.m */; };
+		6ECB9ACB1A1E251000B5FE0F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */; };
+		6ED2AD061A22012B00FA8EDD /* CustomFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AD051A22012B00FA8EDD /* CustomFileManager.m */; };
+		6ED2AD0B1A22018300FA8EDD /* FileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AD0A1A22018300FA8EDD /* FileManagerController.m */; };
+		6ED6A4421A205E8F0060E5BC /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A4411A205E8F0060E5BC /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,16 @@
 		6ECB9AB51A1E1FC200B5FE0F /* CustomLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECB9ABA1A1E1FC200B5FE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ECB9ABB1A1E1FC200B5FE0F /* CustomLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLibTests.m; sourceTree = "<group>"; };
+		6ECB9AC51A1E20B800B5FE0F /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
+		6ECB9AC61A1E20B800B5FE0F /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
+		6ECB9AC91A1E251000B5FE0F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		6ED2AD041A22012B00FA8EDD /* CustomFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFileManager.h; sourceTree = "<group>"; };
+		6ED2AD051A22012B00FA8EDD /* CustomFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFileManager.m; sourceTree = "<group>"; };
+		6ED2AD091A22018300FA8EDD /* FileManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagerController.h; sourceTree = "<group>"; };
+		6ED2AD0A1A22018300FA8EDD /* FileManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerController.m; sourceTree = "<group>"; };
+		6ED6A4401A205E8F0060E5BC /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		6ED6A4411A205E8F0060E5BC /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +100,11 @@
 			children = (
 				6ECB9AA01A1E1FC200B5FE0F /* AppDelegate.h */,
 				6ECB9AA11A1E1FC200B5FE0F /* AppDelegate.m */,
-				6ECB9AA61A1E1FC200B5FE0F /* ViewController.h */,
-				6ECB9AA71A1E1FC200B5FE0F /* ViewController.m */,
+				6ECB9AC51A1E20B800B5FE0F /* TableController.h */,
+				6ECB9AC61A1E20B800B5FE0F /* TableController.m */,
+				6ED2AD081A22015000FA8EDD /* FileManager */,
+				6ED2AD071A22013100FA8EDD /* CoreData */,
+				6ECB9AC81A1E20D100B5FE0F /* Custom */,
 				6ECB9AA91A1E1FC200B5FE0F /* Main.storyboard */,
 				6ECB9AAC1A1E1FC200B5FE0F /* Images.xcassets */,
 				6ECB9AAE1A1E1FC200B5FE0F /* LaunchScreen.xib */,
@@ -120,6 +138,37 @@
 				6ECB9ABA1A1E1FC200B5FE0F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6ECB9AC81A1E20D100B5FE0F /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9AC91A1E251000B5FE0F /* CoreDataManager.h */,
+				6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */,
+				6ED2AD041A22012B00FA8EDD /* CustomFileManager.h */,
+				6ED2AD051A22012B00FA8EDD /* CustomFileManager.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		6ED2AD071A22013100FA8EDD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9AA61A1E1FC200B5FE0F /* ViewController.h */,
+				6ECB9AA71A1E1FC200B5FE0F /* ViewController.m */,
+				6ED6A4401A205E8F0060E5BC /* Test.h */,
+				6ED6A4411A205E8F0060E5BC /* Test.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		6ED2AD081A22015000FA8EDD /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				6ED2AD091A22018300FA8EDD /* FileManagerController.h */,
+				6ED2AD0A1A22018300FA8EDD /* FileManagerController.m */,
+			);
+			name = FileManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ECB9ACB1A1E251000B5FE0F /* CoreDataManager.m in Sources */,
 				6ECB9AA51A1E1FC200B5FE0F /* CustomLib.xcdatamodeld in Sources */,
 				6ECB9AA21A1E1FC200B5FE0F /* AppDelegate.m in Sources */,
 				6ECB9AA81A1E1FC200B5FE0F /* ViewController.m in Sources */,
+				6ED2AD0B1A22018300FA8EDD /* FileManagerController.m in Sources */,
+				6ED2AD061A22012B00FA8EDD /* CustomFileManager.m in Sources */,
+				6ED6A4421A205E8F0060E5BC /* Test.m in Sources */,
+				6ECB9AC71A1E20B800B5FE0F /* TableController.m in Sources */,
 				6ECB9A9F1A1E1FC200B5FE0F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +472,7 @@
 				6ECB9AC11A1E1FC200B5FE0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6ECB9AC21A1E1FC200B5FE0F /* Build configuration list for PBXNativeTarget "CustomLibTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +481,7 @@
 				6ECB9AC41A1E1FC200B5FE0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
