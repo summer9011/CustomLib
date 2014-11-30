@@ -7,7 +7,7 @@
 //
 
 #import "FileManagerController.h"
-#import "FileManager.h"
+#import "StringManager.h"
 
 @interface FileManagerController ()
 
@@ -26,16 +26,27 @@
 //MD5加密
 - (IBAction)doMD5:(id)sender {
     NSString *str=@"this is a test";
-    NSString *md5str=[FileManager MD5:str];
+    NSString *md5str=[StringManager MD5:str];
     NSLog(@"%@",md5str);
 }
 
 //获取文件路径
 - (IBAction)doGetDirectory:(id)sender {
-    NSLog(@"home %@",[FileManager getHomeDirectory]);
-    NSLog(@"documents %@",[FileManager getDocumentsDirectory]);
-    NSLog(@"caches %@",[FileManager getCachesDirectory]);
-    NSLog(@"tmp %@",[FileManager getTmpDirectory]);
+    NSLog(@"home %@",[StringManager getHomeDirectory]);
+    NSLog(@"documents %@",[StringManager getDocumentsDirectory]);
+    NSLog(@"caches %@",[StringManager getCachesDirectory]);
+    NSLog(@"tmp %@",[StringManager getTmpDirectory]);
+}
+
+//获取文件结构目录
+- (IBAction)doCreatePath:(id)sender {
+    NSString *path=[StringManager getDocumentsDirectory];
+    BOOL isSuccess=[StringManager createFilePathForPath:[path stringByAppendingPathComponent:@"abc"]];
+    if (isSuccess) {
+        NSLog(@"create success");
+    }else{
+        NSLog(@"create error");
+    }
 }
 
 @end

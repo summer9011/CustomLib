@@ -17,7 +17,7 @@
 		6ECB9ABC1A1E1FC200B5FE0F /* CustomLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9ABB1A1E1FC200B5FE0F /* CustomLibTests.m */; };
 		6ECB9AC71A1E20B800B5FE0F /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9AC61A1E20B800B5FE0F /* TableController.m */; };
 		6ECB9ACB1A1E251000B5FE0F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */; };
-		6ED2AD061A22012B00FA8EDD /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AD051A22012B00FA8EDD /* FileManager.m */; };
+		6ED2AD061A22012B00FA8EDD /* StringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AD051A22012B00FA8EDD /* StringManager.m */; };
 		6ED2AD0B1A22018300FA8EDD /* FileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AD0A1A22018300FA8EDD /* FileManagerController.m */; };
 		6ED6A4421A205E8F0060E5BC /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A4411A205E8F0060E5BC /* Test.m */; };
 /* End PBXBuildFile section */
@@ -51,8 +51,8 @@
 		6ECB9AC61A1E20B800B5FE0F /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		6ECB9AC91A1E251000B5FE0F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
-		6ED2AD041A22012B00FA8EDD /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
-		6ED2AD051A22012B00FA8EDD /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		6ED2AD041A22012B00FA8EDD /* StringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringManager.h; sourceTree = "<group>"; };
+		6ED2AD051A22012B00FA8EDD /* StringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringManager.m; sourceTree = "<group>"; };
 		6ED2AD091A22018300FA8EDD /* FileManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagerController.h; sourceTree = "<group>"; };
 		6ED2AD0A1A22018300FA8EDD /* FileManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerController.m; sourceTree = "<group>"; };
 		6ED6A4401A205E8F0060E5BC /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
@@ -145,8 +145,8 @@
 			children = (
 				6ECB9AC91A1E251000B5FE0F /* CoreDataManager.h */,
 				6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */,
-				6ED2AD041A22012B00FA8EDD /* FileManager.h */,
-				6ED2AD051A22012B00FA8EDD /* FileManager.m */,
+				6ED2AD041A22012B00FA8EDD /* StringManager.h */,
+				6ED2AD051A22012B00FA8EDD /* StringManager.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 				6ECB9AA21A1E1FC200B5FE0F /* AppDelegate.m in Sources */,
 				6ECB9AA81A1E1FC200B5FE0F /* ViewController.m in Sources */,
 				6ED2AD0B1A22018300FA8EDD /* FileManagerController.m in Sources */,
-				6ED2AD061A22012B00FA8EDD /* FileManager.m in Sources */,
+				6ED2AD061A22012B00FA8EDD /* StringManager.m in Sources */,
 				6ED6A4421A205E8F0060E5BC /* Test.m in Sources */,
 				6ECB9AC71A1E20B800B5FE0F /* TableController.m in Sources */,
 				6ECB9A9F1A1E1FC200B5FE0F /* main.m in Sources */,

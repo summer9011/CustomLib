@@ -101,13 +101,28 @@
                                     <action selector="doGetDirectory:" destination="z2Q-Lk-kPp" eventType="touchUpInside" id="Mbs-mb-sYb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEf-uz-24t">
+                                <rect key="frame" x="225" y="169" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cqm-Cs-wJU"/>
+                                    <constraint firstAttribute="width" constant="150" id="GlV-AF-QiO"/>
+                                </constraints>
+                                <state key="normal" title="创建文件路径">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doCreatePath:" destination="z2Q-Lk-kPp" eventType="touchUpInside" id="NSW-Vq-Blb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Gcq-gE-xqi" secondAttribute="centerX" id="DS2-0K-czD"/>
                             <constraint firstItem="Gcq-gE-xqi" firstAttribute="top" secondItem="VVL-r0-4Fw" secondAttribute="bottom" constant="15" id="DYm-eB-DQH"/>
+                            <constraint firstItem="TEf-uz-24t" firstAttribute="top" secondItem="Gcq-gE-xqi" secondAttribute="bottom" constant="15" id="X1Y-WV-xIU"/>
                             <constraint firstItem="VVL-r0-4Fw" firstAttribute="top" secondItem="sbE-x7-7J8" secondAttribute="bottom" constant="15" id="ZLc-0u-OM8"/>
                             <constraint firstAttribute="centerX" secondItem="VVL-r0-4Fw" secondAttribute="centerX" id="kXv-Fq-D6H"/>
+                            <constraint firstAttribute="centerX" secondItem="TEf-uz-24t" secondAttribute="centerX" id="tIT-Kd-KmW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="文件与字符串管理类" id="9VQ-yZ-OEq"/>

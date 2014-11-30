@@ -12,7 +12,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FileManager : NSObject
+@interface StringManager : NSObject
 
 /*==========================     字符加密MD5     ==========================*/
 
@@ -46,20 +46,8 @@
 //获取tmp目录路径
 +(NSString *)getTmpDirectory;
 
-
-/*==========================     文件管理     ==========================*/
-
-//获取文件目录结构
-
-
-//获取文件内容
-
-
-//存储数据到文件
-
-
-//删除文件
-
+//创建文件路径
++(BOOL)createFilePathForPath:(NSString *)path;
 
 
 @end

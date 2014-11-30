@@ -6,16 +6,16 @@
 //  Copyright (c) 2014年 赵立波. All rights reserved.
 //
 
-#import "FileManager.h"
+#import "StringManager.h"
 #import <CommonCrypto/CommonCrypto.h>
 
-@implementation FileManager
+@implementation StringManager
 
 /*==========================     字符加密MD5     ==========================*/
 
 //MD5加密
 +(NSString *)MD5:(NSString *)str {
-    return [FileManager MD5:str IsUpper:NO];
+    return [StringManager MD5:str IsUpper:NO];
 }
 
 //MD5加密，返回大写的字符串
@@ -59,5 +59,20 @@
 +(NSString *)getTmpDirectory {
     return [NSTemporaryDirectory() stringByAppendingPathComponent:TMP_PATH];
 }
+
+//创建文件路径
++(BOOL)createFilePathForPath:(NSString *)path {
+    NSFileManager *manager=[NSFileManager defaultManager];
+    BOOL isDir=YES;
+    if(![manager fileExistsAtPath:path isDirectory:&isDir]){
+        BOOL isCreate=[manager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
+        if (!isCreate) {
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 
 @end
