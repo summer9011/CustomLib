@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E26FEB31B88CA6E005C7EB9 /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E26FEB21B88CA6E005C7EB9 /* AES.m */; };
 		6ECB9A9F1A1E1FC200B5FE0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9A9E1A1E1FC200B5FE0F /* main.m */; };
 		6ECB9AA21A1E1FC200B5FE0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9AA11A1E1FC200B5FE0F /* AppDelegate.m */; };
 		6ECB9AA51A1E1FC200B5FE0F /* CustomLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9AA31A1E1FC200B5FE0F /* CustomLib.xcdatamodeld */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E26FEB11B88CA6E005C7EB9 /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
+		6E26FEB21B88CA6E005C7EB9 /* AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES.m; sourceTree = "<group>"; };
 		6ECB9A991A1E1FC200B5FE0F /* CustomLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECB9A9D1A1E1FC200B5FE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ECB9A9E1A1E1FC200B5FE0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E26FE8E1B88B46B005C7EB9 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				6E26FEB11B88CA6E005C7EB9 /* AES.h */,
+				6E26FEB21B88CA6E005C7EB9 /* AES.m */,
+			);
+			name = AES;
+			sourceTree = "<group>";
+		};
 		6ECB9A901A1E1FC200B5FE0F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +117,7 @@
 				6ED2AD081A22015000FA8EDD /* FileManager */,
 				6ED2AD071A22013100FA8EDD /* CoreData */,
 				6ECB9AC81A1E20D100B5FE0F /* Util */,
+				6E26FE8E1B88B46B005C7EB9 /* AES */,
 				6ECB9AA91A1E1FC200B5FE0F /* Main.storyboard */,
 				6ECB9AAC1A1E1FC200B5FE0F /* Images.xcassets */,
 				6ECB9AAE1A1E1FC200B5FE0F /* LaunchScreen.xib */,
@@ -271,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E26FEB31B88CA6E005C7EB9 /* AES.m in Sources */,
 				6ECB9ACB1A1E251000B5FE0F /* CoreDataManager.m in Sources */,
 				6ECB9AA51A1E1FC200B5FE0F /* CustomLib.xcdatamodeld in Sources */,
 				6ECB9AA21A1E1FC200B5FE0F /* AppDelegate.m in Sources */,

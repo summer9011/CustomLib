@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sKL-vV-s5U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sKL-vV-s5U">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -23,7 +23,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="自定义CoreData操作类" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h3c-9s-3hm">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -40,7 +40,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="文件与字符串管理类" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PFf-Fa-Ahq">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -114,6 +114,15 @@
                                     <action selector="doCreatePath:" destination="z2Q-Lk-kPp" eventType="touchUpInside" id="NSW-Vq-Blb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXj-Kk-qQn">
+                                <rect key="frame" x="255" y="214" width="90" height="30"/>
+                                <state key="normal" title="AES加密解密">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doEncode:" destination="z2Q-Lk-kPp" eventType="touchUpInside" id="5vi-IM-nAJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -123,6 +132,8 @@
                             <constraint firstItem="VVL-r0-4Fw" firstAttribute="top" secondItem="sbE-x7-7J8" secondAttribute="bottom" constant="15" id="ZLc-0u-OM8"/>
                             <constraint firstAttribute="centerX" secondItem="VVL-r0-4Fw" secondAttribute="centerX" id="kXv-Fq-D6H"/>
                             <constraint firstAttribute="centerX" secondItem="TEf-uz-24t" secondAttribute="centerX" id="tIT-Kd-KmW"/>
+                            <constraint firstAttribute="centerX" secondItem="eXj-Kk-qQn" secondAttribute="centerX" id="vNZ-Y9-uT9"/>
+                            <constraint firstItem="eXj-Kk-qQn" firstAttribute="top" secondItem="TEf-uz-24t" secondAttribute="bottom" constant="15" id="y0d-Ei-hVg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="文件与字符串管理类" id="9VQ-yZ-OEq"/>

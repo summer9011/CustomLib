@@ -9,6 +9,8 @@
 #import "FileManagerController.h"
 #import "StringManager.h"
 
+#import "AES.h"
+
 @interface FileManagerController ()
 
 @end
@@ -47,6 +49,25 @@
     }else{
         NSLog(@"create error");
     }
+}
+
+- (IBAction)doEncode:(id)sender {
+    NSString *str = @"from ios";
+    
+    //加密发送数据
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost/aes.php?data=%@", [AES AES128Encrypt:str]]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    //接受服务端处理数据
+    NSURLResponse *response;
+    NSError *error;
+    NSData *base64Data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSString *base64Str = [[NSString alloc] initWithData:base64Data encoding:NSUTF8StringEncoding];
+    
+    //解密处理数据
+    NSString *result = [AES AES128Decrypt:base64Str];
+    
+    NSLog(@"%@", result);
 }
 
 @end
