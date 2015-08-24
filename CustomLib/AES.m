@@ -31,7 +31,7 @@ static NSString *gIv = @"setup_gIv_here11";     //与服务端保持一致, 长�
     
     if(diff > 0)
     {
-        newSize = dataLength + diff;
+        newSize = (int)dataLength + diff;
     }
     
     char dataPtr[newSize];
