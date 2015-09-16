@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1874C4CF1BA946B9007F1498 /* StorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874C4CE1BA946B9007F1498 /* StorageObject.m */; };
 		6E26FEB31B88CA6E005C7EB9 /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E26FEB21B88CA6E005C7EB9 /* AES.m */; };
 		6ECB9A9F1A1E1FC200B5FE0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9A9E1A1E1FC200B5FE0F /* main.m */; };
 		6ECB9AA21A1E1FC200B5FE0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9AA11A1E1FC200B5FE0F /* AppDelegate.m */; };
@@ -17,7 +18,6 @@
 		6ECB9AB01A1E1FC200B5FE0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECB9AAE1A1E1FC200B5FE0F /* LaunchScreen.xib */; };
 		6ECB9ABC1A1E1FC200B5FE0F /* CustomLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9ABB1A1E1FC200B5FE0F /* CustomLibTests.m */; };
 		6ECB9AC71A1E20B800B5FE0F /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9AC61A1E20B800B5FE0F /* TableController.m */; };
-		6ECB9ACB1A1E251000B5FE0F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */; };
 		6ED2AD061A22012B00FA8EDD /* StringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AD051A22012B00FA8EDD /* StringManager.m */; };
 		6ED2AD0B1A22018300FA8EDD /* FileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AD0A1A22018300FA8EDD /* FileManagerController.m */; };
 		6ED6A4421A205E8F0060E5BC /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A4411A205E8F0060E5BC /* Test.m */; };
@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1874C4CD1BA946B9007F1498 /* StorageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageObject.h; sourceTree = "<group>"; };
+		1874C4CE1BA946B9007F1498 /* StorageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageObject.m; sourceTree = "<group>"; };
 		6E26FEB11B88CA6E005C7EB9 /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
 		6E26FEB21B88CA6E005C7EB9 /* AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES.m; sourceTree = "<group>"; };
 		6ECB9A991A1E1FC200B5FE0F /* CustomLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,8 +54,6 @@
 		6ECB9ABB1A1E1FC200B5FE0F /* CustomLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLibTests.m; sourceTree = "<group>"; };
 		6ECB9AC51A1E20B800B5FE0F /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		6ECB9AC61A1E20B800B5FE0F /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
-		6ECB9AC91A1E251000B5FE0F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
-		6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		6ED2AD041A22012B00FA8EDD /* StringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringManager.h; sourceTree = "<group>"; };
 		6ED2AD051A22012B00FA8EDD /* StringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringManager.m; sourceTree = "<group>"; };
 		6ED2AD091A22018300FA8EDD /* FileManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagerController.h; sourceTree = "<group>"; };
@@ -121,7 +121,6 @@
 				6ECB9AA91A1E1FC200B5FE0F /* Main.storyboard */,
 				6ECB9AAC1A1E1FC200B5FE0F /* Images.xcassets */,
 				6ECB9AAE1A1E1FC200B5FE0F /* LaunchScreen.xib */,
-				6ECB9AA31A1E1FC200B5FE0F /* CustomLib.xcdatamodeld */,
 				6ECB9A9C1A1E1FC200B5FE0F /* Supporting Files */,
 			);
 			path = CustomLib;
@@ -156,8 +155,8 @@
 		6ECB9AC81A1E20D100B5FE0F /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				6ECB9AC91A1E251000B5FE0F /* CoreDataManager.h */,
-				6ECB9ACA1A1E251000B5FE0F /* CoreDataManager.m */,
+				1874C4CD1BA946B9007F1498 /* StorageObject.h */,
+				1874C4CE1BA946B9007F1498 /* StorageObject.m */,
 				6ED2AD041A22012B00FA8EDD /* StringManager.h */,
 				6ED2AD051A22012B00FA8EDD /* StringManager.m */,
 			);
@@ -169,6 +168,7 @@
 			children = (
 				6ECB9AA61A1E1FC200B5FE0F /* ViewController.h */,
 				6ECB9AA71A1E1FC200B5FE0F /* ViewController.m */,
+				6ECB9AA31A1E1FC200B5FE0F /* CustomLib.xcdatamodeld */,
 				6ED6A4401A205E8F0060E5BC /* Test.h */,
 				6ED6A4411A205E8F0060E5BC /* Test.m */,
 			);
@@ -285,9 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E26FEB31B88CA6E005C7EB9 /* AES.m in Sources */,
-				6ECB9ACB1A1E251000B5FE0F /* CoreDataManager.m in Sources */,
 				6ECB9AA51A1E1FC200B5FE0F /* CustomLib.xcdatamodeld in Sources */,
 				6ECB9AA21A1E1FC200B5FE0F /* AppDelegate.m in Sources */,
+				1874C4CF1BA946B9007F1498 /* StorageObject.m in Sources */,
 				6ECB9AA81A1E1FC200B5FE0F /* ViewController.m in Sources */,
 				6ED2AD0B1A22018300FA8EDD /* FileManagerController.m in Sources */,
 				6ED2AD061A22012B00FA8EDD /* StringManager.m in Sources */,

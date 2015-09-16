@@ -6,47 +6,63 @@
 //  Copyright (c) 2014年 赵立波. All rights reserved.
 //
 
-/*
- 该文件定义了一些加密算法，文件路径获取的方法，和文件管理的方法，其中路径获取需要根据实际项目自行配置
- */
-
 #import <Foundation/Foundation.h>
 
 @interface StringManager : NSObject
 
-/*==========================     字符加密MD5     ==========================*/
-
-//MD5加密
+/**
+ *  MD5加密
+ *
+ *  @param str 原文
+ *
+ *  @return 密文
+ */
 +(NSString *)MD5:(NSString *)str;
 
-//MD5加密，返回大写的字符串
+/**
+ *  MD5加密(大写)
+ *
+ *  @param str 原文
+ *
+ *  @return 大写密文
+ */
 +(NSString *)MD5:(NSString *)str IsUpper:(BOOL) upper;
 
-
-/*==========================     字符加密DES     ==========================*/
-
-//DES加密
-
-
-//DES解密
-
-
-
-/*==========================     路径获取     ==========================*/
-
-//获取home目录路径
+/**
+ *  获取home目录路径
+ *
+ *  @return 路径
+ */
 +(NSString *)getHomeDirectory;
 
-//获取Documents目录路径
+/**
+ *  获取Documents目录路径
+ *
+ *  @return 路径
+ */
 +(NSString *)getDocumentsDirectory;
 
-//获取Caches目录路径
+/**
+ *  获取Caches目录路径
+ *
+ *  @return 路径
+ */
 +(NSString *)getCachesDirectory;
 
-//获取tmp目录路径
+/**
+ *  获取tmp目录路径
+ *
+ *  @return 路径
+ */
 +(NSString *)getTmpDirectory;
 
-//创建文件路径
+/**
+ *  创建文件路径
+ *
+ *  @param path 需要创建的路径
+ *
+ *  @return 是否创建成功
+ */
 +(BOOL)createFilePathForPath:(NSString *)path;
 
 
